@@ -206,20 +206,20 @@
         let startPoint = null;
         let endPoint = null;
         let poiMarkers = [];
-        let mapNum = -1; // SET MAP NUMBER    
+        let mapNum = 39; // SET MAP NUMBER    
 
         // Function to add a marker at a specific point on the map
         const instructions = [
-            { title: "Current Time", info: " " },
-            { title: "Address of Origin", info: " " },
-            { title: "Address of Destination", info: " " },
+            { title: "Current Time", info: "6:02 PM" },
+            { title: "Address of Origin", info: "317 4th Ave, La Puente, CA 91746" },
+            { title: "Address of Destination", info: "Recreation Hall, 1501 San Pedro Dr SE Bldg 2, Albuquerque, NM 87108" },
             { title: "Distance of Destination", info: "0" },
             { title: "Estimated Time to Destination", info: "0" },
-            { title: "State of Charge of Battery", info: "0 Charge" },
-            { title: "Range of Current Battery", info: "0 Minutes" },
-            { title: "Estimated Drive-distance with Current Charge", info: "0 Miles" },
+            { title: "State of Charge of Battery", info: "59% Charge" },
+            { title: "Range of Current Battery", info: "177 Minutes" },
+            { title: "Estimated Drive-distance with Current Charge", info: "133 Miles" },
             { title: "Type of Chargin Socket", info: "J1772" },
-            { title: "kW Needed to Fully Charge Your Car", info: "0 kW" }
+            { title: "kW Needed to Fully Charge Your Car", info: "24.6 kW" }
         ];
 
 
@@ -239,7 +239,7 @@
 
                 waitTime: [
                         { type: 'J1772', value: '0' },
-                        { type: 'CCS/SAE', value: '~' },
+                        { type: 'CCS/SAE', value: '144' },
                         { type: 'CHAdeMO', value: '0' },
                     ],
                 plugNumb: [
@@ -248,9 +248,9 @@
                         { type: 'CHAdeMO', value: '1' },
                     ],
                 chargeTime: [
-                        { type: 'J1772', value: '' },
-                        { type: 'CCS/SAE', value: '' },
-                        { type: 'CHAdeMO', value: '0' },
+                        { type: 'J1772', value: '228' },
+                        { type: 'CCS/SAE', value: '23' },
+                        { type: 'CHAdeMO', value: '26' },
                     ],
                 socketAvalability: [
                         { type: 'J1772', value: '2 available' },
@@ -258,7 +258,7 @@
                         { type: 'CHAdeMO', value: '1 available' },
                     ],    
 
-                energySource: 'Energy Breakdown: 0% Grid, 0% Renewable',
+                energySource: 'Energy Breakdown: 39% Grid, 61% Renewable',
 
                 chargingFee: '$0.00',
                 chargingFeeRate: 'per kWh',
@@ -269,8 +269,8 @@
                 grocery: 'Yes <br><br> There is a grocery store in walking distance... 0 mile',
                 sportsClothes: 'No <br><br> There is a sports or clothing store in walking distance... 0 miles',
                 
-                rating: '★ ✰ ',
-                ratingNum: ''
+                rating: '★ ★ ★ ★ ★',
+                ratingNum: '13'
             },
             {
                 coordinates: [-111.650129,35.197143],
@@ -290,13 +290,13 @@
                         { type: 'J1772', value: '5' }
                     ],
                 chargeTime: [
-                        { type: 'J1772', value: '' }
+                        { type: 'J1772', value: '228' }
                     ],
                 socketAvalability: [
                         { type: 'J1772', value: '2 available' }
                     ],        
 
-                energySource: 'Energy Breakdown: 0% Grid, 0% Renewable',
+                energySource: 'Energy Breakdown: 76% Grid, 24% Renewable',
 
                 chargingFee: 'Payed',
                 chargingFeeRate: 'per kWh',
@@ -308,8 +308,8 @@
                 grocery: 'No  <br><br> There is a grocery store in walking distance... 0 miles',
                 sportsClothes: 'Yes <br><br> There is a sports or clothing store in walking distance... 0 miles',
                 
-                rating: '★ ✰',  
-                ratingNum: '0'
+                rating: '★ ★ ★ ★ ★',  
+                ratingNum: '71'
             }
         ];
 
@@ -890,7 +890,7 @@
                         },
                         geometry: {
                             type: 'Point',
-                            coordinates: [-106.58285129700458,35.05468008690852]
+                            coordinates: [-117.98881367020991,34.03896014600001]
                         }
                     }
                 ]
@@ -909,7 +909,7 @@
                         },
                         geometry: {
                             type: 'Point',
-                            coordinates: [-117.98881367020991,34.03896014600001]
+                            coordinates: [-106.58285129700458,35.05468008690852]
                         }
                     }
                 ]
