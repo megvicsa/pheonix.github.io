@@ -215,9 +215,9 @@
             { title: "Address of Destination", info: "317 4th Ave, La Puente, CA 91746." },
             { title: "Distance of Destination", info: "0" },
             { title: "Estimated Time to Destination", info: "0" },
-            { title: "State of Charge of Battery", info: "100% Charge." },
-            { title: "Range of Current Battery", info: "300 Minutes." },
-            { title: "Estimated Drive-distance with Current Charge", info: "225 Miles." },
+            { title: "State of Charge of Battery", info: "100% charge." },
+            { title: "Range of Current Battery", info: "300 minutes." },
+            { title: "Estimated Drive Distance with Current Charge", info: "225 miles." },
             { title: "Type of Chargin Socket", info: "J1772." },
             { title: "kW Needed to Fully Charge Your Car", info: "60 kW." }
         ];
@@ -253,9 +253,9 @@
                         { type: 'CHAdeMO', value: '63' },
                     ],
                 socketAvalability: [
-                        { type: 'J1772', value: '2 available' },
-                        { type: 'CCS/SAE', value: '0 available' },
-                        { type: 'CHAdeMO', value: '1 available' },
+                        { type: 'J1772', value: '2' },
+                        { type: 'CCS/SAE', value: '0' },
+                        { type: 'CHAdeMO', value: '1' },
                     ],    
 
                 energySource: '39% Grid, 61% Renewable',
@@ -265,9 +265,9 @@
                 parkingFee: '$1.50',
                 parkingFeeRate: 'per hour',
 
-                coffee: 'Yes <br><br> There is a coffee shop in walking distance 0.4 miles away.',
-                grocery: 'Yes <br><br> There is a grocery store in walking distance 0.3 miles away.',
-                sportsClothes: 'Yes <br><br> There is a sports or clothing store in walking distance 0.7 miles',
+                coffee: 'Yes. <br><br> There is a coffee shop in walking distance 0.4 miles away.',
+                grocery: 'Yes. <br><br> There is a grocery store in walking distance 0.3 miles away.',
+                sportsClothes: 'Yes. <br><br> There is a sports or clothing store in walking distance 0.7 miles',
                 
                 rating: '★ ★ ★ ★ ★',
                 ratingNum: '13'
@@ -293,20 +293,20 @@
                         { type: 'J1772', value: '564' }
                     ],
                 socketAvalability: [
-                        { type: 'J1772', value: '2 available' }
+                        { type: 'J1772', value: '2' }
                     ],        
 
                 energySource: '76% Grid, 24% Renewable',
 
                 chargingFee: 'paid',
-                chargingFeeRate: 'per kWh',
+                chargingFeeRate: 'for any amount of power',
 
-                parkingFee: 'free',
+                parkingFee: '$0.00',
                 parkingFeeRate: 'for any amount of time',
 
-                coffee: 'Yes <br><br> There is a coffee shop in walking distance 0.1 miles away.',
-                grocery: 'Yes <br><br> There is a grocery store in walking distance 0.5 miles away.',
-                sportsClothes: 'Yes <br><br> There is a sports or clothing store in walking distance 0.2 miles away. ',
+                coffee: 'Yes. <br><br> There is a coffee shop in walking distance 0.1 miles away.',
+                grocery: 'Yes. <br><br> There is a grocery store in walking distance 0.5 miles away.',
+                sportsClothes: 'Yes. <br><br> There is a sports or clothing store in walking distance 0.2 miles away. ',
                 
                 rating: '★ ★ ★ ★ ★',  
                 ratingNum: '71'
@@ -590,7 +590,7 @@
             content = `<p style="font-size: 16px; padding: 5px;">${infoContent}</p>`;
 
             if (infoType === 'rating') {
-                content = `<p style="font-size: 16px; padding: 5px;"><span class="stars">${station.rating}</span> <br><br> There are ${station.ratingNum} total reviews</p>`;
+                content = `<p style="font-size: 16px; padding: 5px;"><b>Rating:</b><br><span class="stars">${station.rating}</span> <br><br> There are ${station.ratingNum} total reviews.</p>`;
                 console.log('Rating clicked');
             }
 
